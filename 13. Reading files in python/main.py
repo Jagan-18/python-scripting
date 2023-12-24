@@ -92,7 +92,7 @@ with open(fname, 'r') as f:
 
 
 
-fname = r'C:/Users/test/Desktop/PROGRAMMING_WEB DEVELOPMENT/PYTHON_TUTORIAL/01. python_files_for_sha
+fname = r'C:/Users/test/Desktop/PROGRAMMING_WEB DEVELOPMENT/PYTHON_TUTORIAL/01. python_files_for_sha'
 with open(fname, 'r') as f:
     content=f.readlines()
     print(content)
@@ -104,7 +104,7 @@ with open(fname, 'r') as f:
     total_len_file = 0
     for line in f:
     # Total length of line in the text file
-    total_len_file = total_len_file+len(line)
+        total_len_file = total_len_file+len(line)
     # Lenght of the line after removing leading and trailing spaces
     len_file = len_file+len(line.strip())
     print(f'Total lenght of the line is {total_len_file}.')

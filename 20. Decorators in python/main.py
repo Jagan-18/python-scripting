@@ -75,7 +75,7 @@ def message():
         print('Python is a programming language.')
     return text
 new_message = message()
-new_message(
+
 
 
 
@@ -151,8 +151,6 @@ print(x*(x**x))
 
 
 
-
-
 def msg_func():
     def text():
         return "Python is a programming language."
@@ -171,7 +169,7 @@ def addition(a, b):
 def outer_addition(func):
     def inner(a, b):
         if a < b:
-        a, b = b, a
+            a, b = b, a
     return func(a, b)
     return inner
 result = outer_addition(addition)
@@ -188,7 +186,7 @@ Rather than above function, Python ensures to employ decorator in easy way with 
 def outer_addition(function):
     def inner(a, b):
         if a < b:
-        a, b = b, a
+            a, b = b, a
     return function(a, b)
     return inner
 @outer_addition # Syntax of decorator
@@ -220,9 +218,6 @@ print(text())
 
 
 
-
-
-
 def do_twice(function):
     def wrapper_do_twice():
         function()
@@ -246,12 +241,12 @@ def do_twice(function):
 @do_twice
 def text(programming_language):
     print(f'{programming_language} is a programming language.')
-text('Python'
+text('Python')
 
 
 
 
-     @do_twice
+@do_twice
 def returning(programming_language):
     print('Python is a programming language.')
     return f'Hello, {programming_language}'
@@ -308,10 +303,10 @@ def iterate(numbers):
     def decorator_iterate(function):
         @functools.wraps(function)
         def wrapper(*args, **kwargs):
-        for _ in range(numbers):
-        worth = function(*args, **kwargs)
-    return worth
-    return wrapper
+            for _ in range(numbers):
+                worth = function(*args, **kwargs)
+                return worth
+            return wrapper
     return decorator_iterate
 @iterate(numbers=4)
 def function_one(name):
@@ -412,6 +407,4 @@ print(message.__closure__)
 print(message.__annotations__)
 print(message.__dir__)
 print(message.__format__)
-
-
 

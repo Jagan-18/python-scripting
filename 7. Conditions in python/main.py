@@ -71,8 +71,8 @@ if 2:
     print('Hello, python!')
 
 
-    if True:
-print('This is true.')
+if True:
+    print('This is true.')
 
 
 pi = 3.14

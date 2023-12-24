@@ -27,11 +27,11 @@ print('Hello')
 frint('Hello, World!')
 
 # Built-in error message
-print('Hello, World!)
+print('Hello, World!')
 
 # Print both string and error to see the running order
 print('This string is printed')
-frint('This gives an error message')
+print('This gives an error message')
 print('This string will not be printed')
 
 

@@ -81,10 +81,7 @@ special_nums_min = lambda a, f: [y[len(y)-len(y)] for y in f(a)]
 print(f'The minimum of special numbers in each list is {special_nums_min(special_nums, special_nums_sorted)}.')
 # Get the second maximum of special numbers in the list
 special_nums_second_max = lambda a, f: [y[len(y)-2] for y in f(a)]
-print(f'The second maximum of special numbers in each list is {special_nums_second_max(special_nums, special_num
-
-
-
+print(f'The second maximum of special numbers in each list is {special_nums_second_max(special_nums, special_num)}')
 
 
 
@@ -134,7 +131,7 @@ print(lambda_list)
 import functools
 from functools import *
 special_nums = [0.577, 1.618, 2.718, 3.14, 6, 28, 37, 1729]
-print(f'The sum and average of the numbers in the list are {reduce((lambda a, b: a+b), special_nums)} and {reduce((la
+print(f'The sum and average of the numbers in the list are {reduce((lambda a, b: a+b), special_nums)}')
 
 
 
@@ -150,9 +147,4 @@ print(list(product(Y,X,X1)))
 print(list(map(lambda x: sqrt(x[1]+x[0]**x[2]),product(Y,X,X1))))
 
 
-
-
 help(functools)
-
-
-

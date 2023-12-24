@@ -145,7 +145,7 @@ message.find('World!')
 message.find('cndsjnd')
 
 
-text = 'Jean-Paul Sartre somewhere observed that we each of us make our own hell out of the people around us. Had
+text = 'Jean-Paul Sartre somewhere observed that we each of us make our own hell out of the people around us. Had'
 # find the first index of the substring 'Nancy'
 text.find('Nancy')
 

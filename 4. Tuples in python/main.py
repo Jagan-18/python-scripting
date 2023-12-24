@@ -45,8 +45,8 @@ for i in rep_tup:
     print(i)
 
 
-    def cmp(t1, t2):
-return bool(t1 > t2) - bool(t1 < t2)
+def cmp(t1, t2):
+    return bool(t1 > t2) - bool(t1 < t2)
 def cmp(t31, t4):
     return bool(t3 > t4) - bool(t3 < t4)
 def cmp(t5, t6):

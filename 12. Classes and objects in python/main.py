@@ -73,7 +73,7 @@ class Rectangle(object):
     plt.show()
 # import library to draw the Rectangle
 import matplotlib.pyplot as plt
-%matplotlib inline
+# % matplotlib inline
 # creating an object blue rectangle
 one_Rectangle = Rectangle(20, 10, 'blue')
 # Printing the object attribute width
@@ -108,7 +108,7 @@ class Circle(object):
     # Method
     def increase_radius(self, r):
         self.radius = self.radius + r
-    return self.radius
+        return self.radius
     # Method
     def drawCircle(self):
         plt.gca().add_patch(plt.Circle((0, 0), self.radius, fc=self.color))
@@ -116,7 +116,7 @@ class Circle(object):
     plt.show()
 # import library to draw the circle
 import matplotlib.pyplot as plt
-%matplotlib inline
+# %matplotlib inline
 # creating an object blue circle
 one_Circle = Circle(3.14, 'blue')
 # Printing the object attribute radius
@@ -247,8 +247,8 @@ class PerfectNumbers(SpecialNumbers):
     def __init__(self):
 
     # call superclass
-    super().__init__('perfect numbers.')
-    print('These numbers are very special in mathematik.')
+        super().__init__('perfect numbers.')
+        print('These numbers are very special in mathematik.')
 nums = PerfectNumbers()
 
 

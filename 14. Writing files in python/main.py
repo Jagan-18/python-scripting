@@ -2,11 +2,11 @@
 fname = 'pcr_file.txt'
 with open(fname, 'w') as f:
     f.write("I dedicate this book to Nancy Lier Cosgrove Mullis.\n")
-    f.write("Jean-Paul Sartre somewhere observed that we each of us make our own hell out of the people around us. H
-    f.write("Or maybe he would have just said, 'If I would had a woman like that, my books would not have been about
-    f.write("This book is not about despair. It is about a little bit of a lot of things, and, if not a single one of them is wet
+    f.write("Jean-Paul Sartre somewhere observed that we each of us make our own hell out of the people around us. \n")
+    f.write("Or maybe he would have just said, 'If I would had a woman like that, my books would not have been about \n")
+    f.write("This book is not about despair. It is about a little bit of a lot of things, and, if not a single one of them is wet \n")
     f.write("A feedback from Elle on the book\n")
-    f.write("This bona-fide wild card of the scientific community writes with eccentric gusto.… Mullis has created a free
+    f.write("This bona-fide wild card of the scientific community writes with eccentric gusto.… Mullis has created a free \n")
 
 
 
@@ -20,16 +20,16 @@ with open(fname, 'w') as f:
 
     # Writing a list to a file
     added_text = ["From The New Yorker\n",
-                  "Entertaini ng … [Mullis is] usefully cranky and combative, raising provocative questions about receive
+                  "Entertaini ng … [Mullis is] usefully cranky and combative, raising provocative questions about receive\n",
                   "From Chicago Sun-Times\n",
-                  "One of the most unusual scientists of our times, a man who would be a joy to put under a microscope
+                  "One of the most unusual scientists of our times, a man who would be a joy to put under a microscope \n",
                   "From Andrew Weil, M.D.\n",
-                  "In this entertaining romp through diverse fields of inquiry, [Mullis] displays the openmindedness, ecc
+                  "In this entertaining romp through diverse fields of inquiry, [Mullis] displays the openmindedness, ecc\n",
                   ]
     fname = 'sample.txt'
     with open(fname, 'w') as f:
         for line in added_text:
-    print(line)
+            print(line)
     f.write(line)
 
 
@@ -47,11 +47,11 @@ with open(fname, 'w') as f:
     # Writing a new line to the text file
     with open(new_file, 'a') as f: # To append a new line to the text file, use 'a' in the syntax string
         f.write("I dedicate this book to Nancy Lier Cosgrove Mullis.\n")
-    f.write("Jean-Paul Sartre somewhere observed that we each of us make our own hell out of the people around us. H
-    f.write("Or maybe he would have just said, 'If I would had a woman like that, my books would not have been about
-    f.write("This book is not about despair. It is about a little bit of a lot of things, and, if not a single one of them is wet
+    f.write("Jean-Paul Sartre somewhere observed that we each of us make our own hell out of the people around us.\n")
+    f.write("Or maybe he would have just said, 'If I would had a woman like that, my books would not have been about\n")
+    f.write("This book is not about despair. It is about a little bit of a lot of things, and, if not a single one of them is wet\n")
     f.write("A feedback from Elle on the book\n")
-    f.write("This bona-fide wild card of the scientific community writes with eccentric gusto.… Mullis has created a free
+    f.write("This bona-fide wild card of the scientific community writes with eccentric gusto.… Mullis has created a free\n")
     # Verification of the new lines in the text file
     with open(new_file, 'r') as f:
         print(f.read())
@@ -61,7 +61,7 @@ with open(fname, 'w') as f:
     fname = 'pcr_file.txt'
     with open(fname, 'a+') as f:
         f.write("From F. Lee Bailey\n")
-    f.write("A very good book by a fascinating man.… [Mullis] enjoys an almost frighteningly brilliant mind and yet some
+    f.write("A very good book by a fascinating man.… [Mullis] enjoys an almost frighteningly brilliant mind and yet some\n")
     print(f.read())
 
 
@@ -125,8 +125,8 @@ with open(fname, 'w') as f:
     fname = 'pcr_file.txt'
     with open(fname, 'r') as f_reading:
         with open('pcr_file_1.txt', 'w') as f_writing:
-    for line in f_reading:
-        f_writing.write(line)
+            for line in f_reading:
+                f_writing.write(line)
 
 
 
@@ -174,8 +174,8 @@ with open(fname, 'w') as f:
     lines = ['Hello, World!', 'Hi, Python!']
     with open('new_file.txt', 'w') as f:
         for line in lines:
-    f.write(line)
-    f.write('\n')
+            f.write(line)
+            f.write('\n')
     with open('new_file.txt', 'r') as f:
         print(f.read())
 

@@ -151,7 +151,7 @@ def fermentation(microorganism, substrate, product, activity):
     if activity < 1000:
         return f'The fermentation process was unsuccessful with the {product} activity of {activity} U/mL from {substrate}
     else:
-    return f'The fermentation process was successful with the {product} activity of {activity} U/mL from {substrate} us
+        return f'The fermentation process was successful with the {product} activity of {activity} U/mL from {substrate} us'
 result1 = fermentation('Aspergillus niger', 'molasses', 'inulinase', 1800)
 print(result1)
 print()
@@ -163,8 +163,8 @@ print(result2)
 def fermentation(content):
     for parameters in content:
         print(parameters)
-content = ['Stirred-tank bioreactor' ,'30°C temperature', '200 rpm agitation speed', '1 vvm aeration', '1% (v/v) inoculum
-           fermentation(content)
+content = ['Stirred-tank bioreactor' ,'30°C temperature', '200 rpm agitation speed', '1 vvm aeration', '1% (v/v) inoculum']
+fermentation(content)
 
 
 # Define a function adjusting the default value of the variable
@@ -172,7 +172,7 @@ def rating_value(rating = 5.5):
     if rating < 8:
         return f'You should not watch this film with the rating value of {rating}'
     else:
-    return f'You should watch this film with the rating value of {rating}'
+        return f'You should watch this film with the rating value of {rating}'
 print(rating_value())
 print(rating_value(8.6))
 
@@ -207,7 +207,7 @@ def fermentation(process_name):
     if process_name == process:
         return '0.5 g/L/h.'
     else:
-    return '0.25 g/L/h.'
+        return '0.25 g/L/h.'
 print('The productiovity in continuous fermentation is', fermentation('Continuous fermentation'))
 print('The productiovity in batch fermentation is', fermentation('Batch fermentation'))
 print('Continuous fermentation has many advantages over batch fermentation.')
@@ -223,7 +223,7 @@ def fermentation(process_name):
     if process_name == process:
         return '0.5 g/L/h.'
     else:
-    return '0.25 g/L/h.'
+        return '0.25 g/L/h.'
 print('The productiovity in continuous fermentation is', fermentation('Continuous fermentation'))
 print('The productiovity in batch fermentation is', fermentation('Batch fermentation'))
 print('Continuous fermentation has many advantages over batch fermentation.')
@@ -238,7 +238,7 @@ def fermentation(process_name):
     if process_name == process:
         return '0.5 g/L/h.'
     else:
-    return '0.25 g/L/h.'
+        return '0.25 g/L/h.'
 print('The productiovity in continuous fermentation is', fermentation('Continuous fermentation'))
 print('The productiovity in batch fermentation is', fermentation('Batch fermentation'))
 print(f'My favourite process is {process}.')
@@ -269,7 +269,7 @@ print('The total of the numbers is', total(0.577, 2.718, 3.14, 1.618, 1729, 6, 3
 def function(**args):
     for key in args:
         print(key, ':', args[key])
-function(Micoorganism='Aspergillus niger', Substrate='Molasses', Product='Inulinase', Fermentation_mode='Batch', A
+function(Micoorganism='Aspergillus niger', Substrate='Molasses', Product='Inulinase', Fermentation_mode='Batch')
 
 
 
@@ -304,7 +304,7 @@ def factorial(number):
     if number == 0:
         return 1
     else:
-    return number*factorial(number-1)
+        return number*factorial(number-1)
 print('The value is', factorial(6))
 
 
@@ -314,7 +314,7 @@ def total_numbers(number, sum):
     if number == 11:
         return sum
     else:
-    return total_numbers(number+1, sum+number)
+        return total_numbers(number+1, sum+number)
 print('The total of first ten numbers is', total_numbers(1, 0))
 
 

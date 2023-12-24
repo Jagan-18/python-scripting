@@ -277,7 +277,7 @@ print('The average of the values in the list is', count/len(special_nums))
 
 
 special_nums = [0.577, 1.618, 2.718, 3.14, 6, 28, 37, 1729]
-print(min(special_nums)
+print(min(special_nums))
 
 
 

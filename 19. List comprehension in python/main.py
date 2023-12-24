@@ -150,7 +150,7 @@ for i in languages:
     if i != 'Java':
         lang_lis.append(i)
     else:
-    lang_lis.append('Python')
+        lang_lis.append('Python')
 print(lang_lis)
 #Using list comprehension
 lang_lis = [i if i != 'Java' else 'Python' for i in languages]
@@ -193,7 +193,7 @@ for i in range(11):
     if i%2 == 0:
         numbers.append('Even')
     else:
-    numbers.append('Odd')
+        numbers.append('Odd')
 print(f'For loop: {numbers}')
 # Using list comprehension
 numbers = ['Even' if i%2==0 else 'Odd' for i in range(11)]

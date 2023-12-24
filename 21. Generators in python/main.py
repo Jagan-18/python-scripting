@@ -1,7 +1,7 @@
 def function():
     for i in range(10):
         if i%2==0:
-        yield i
+            yield i
 
 nlis = []
 for i in function():
@@ -13,14 +13,11 @@ print(nlis)
 def func():
     for i in range(25):
         if i%4==0:
-        yield i
+            yield i
 num_lis = []
 for i in func():
     num_lis.append(i)
 print(num_lis)
-
-
-
 
 
 
@@ -89,8 +86,6 @@ cubic_nums_gc = (i**3 for i in range(1500))
 print(f'Memory in bytes with generator expression is {sys.getsizeof(cubic_nums_gc)}.')
 
 
-
-
 def infinite():
     count = 0
     while True:
@@ -98,8 +93,6 @@ def infinite():
     count = count + 1
 for i in infinite():
     print(i)
-
-
 
 
 def generator(a):
@@ -125,7 +118,7 @@ while True:
     try:
         print(f'The number using while loop is {next(generator)}.')
     except StopIteration:
-    break
+        break
 # Using 'for' loop
 nlis = []
 for square in square_number(6):
@@ -143,11 +136,5 @@ square_list.append(next(square))
 print(f'The numbers using generator comprehension are {square_list}.')
 
 
-
-
-
 import math
 sum(i**i for i in range(6))
-
-
-
